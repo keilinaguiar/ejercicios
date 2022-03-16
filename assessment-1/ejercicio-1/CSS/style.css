@@ -4,13 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
 }
-body > header{
+/**
+############################
+#######CABECERA#############
+############################
+**/
+body > header {
     display: flex;
 }
-body > header > ul{
+body > header > ul {
     display: flex;
     width: 412px;
     height: 90px;
@@ -20,37 +26,42 @@ body > header > ul{
     align-items: center;
 }
 
-body > header > ul :first-child{
+body > header > ul :first-child {
     display: flex;
     margin: 1rem;
     margin-top: 2rem;
     font-size: 18px;
 }
-body > header > ul :nth-child(2) > img{
+body > header > ul :nth-child(2) > img {
     display: inline-block;
     justify-content: center;
     width: 75px;
     margin-left: 2rem;
     margin-right: 3.8rem;
 }
-body > header > ul :last-child{
+body > header > ul :last-child {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     margin-right: 1rem;
     width: 35px;
 }
-body > section:first-of-type(){
+/**
+############################
+#######PRIMERA SECCIÓN######
+############################
+**/
+body > section:first-of-type() {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
 }
-body > section:first-of-type >h1{
+body > section:first-of-type > h1 {
     font-size: 50px;
     margin-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 3.2rem;
 }
-body > section:first-of-type > p{
+body > section:first-of-type > p {
     display: flex;
     justify-content: flex-start;
     text-align: left;
@@ -61,51 +72,362 @@ body > section:first-of-type > p{
     margin-right: 3.2em;
     line-height: 1.8rem;
 }
-body > section:first-of-type > :nth-child(3){
-    background-color: rgb(43, 106, 201);
+body > section:first-of-type > :nth-child(3) {
+    background-color: #0057ff;
     color: white;
     border: none;
     font-size: 20px;
     margin-left: 1rem;
-    width:200px;
-    height:45px;
+    width: 160px;
+    height: 45px;
     border-radius: 5px;
 }
-body > section:first-of-type > :nth-child(4){
-    color: rgb(43, 106, 201);
-    background-color: white; 
-    border-color: rgb(43, 106, 201);
+body > section:first-of-type > :nth-child(4) {
+    color: #0057ff;
+    background-color: white;
+    border-color: #0057ff;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
     margin-left: 1rem;
-    width:200px;
-    height:45px;
+    width: 160px;
+    height: 45px;
     border-radius: 5px;
 }
+/**
+############################
+#######SEGUNDA SECCIÓN######
+############################
+**/
 body > :nth-child(3) > ul {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    width: 412px;
     margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-bottom: 1px solid rgb(182, 171, 171);
     border-top: 1px solid rgb(182, 171, 171);
     margin-bottom: 2rem;
-    font-size: 15px;
-
 }
-body > :nth-child(3) > ul > li{
+body > :nth-child(3) > ul > li {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 14px;
+    font-size: 11px;
     text-align: center;
     list-style: none;
+    font-weight: bold;
 }
-body > :nth-child(4) > img{
-    margin-left: 1rem;
-    margin-right: 0.5rem;
+/**
+############################
+#######TERCERA SECCIÓN######
+############################
+**/
+body > :nth-child(4) {
+    width: 412px;
+    height: 1000px;
+    margin-top: 4rem;
+    border-bottom: 1px solid rgb(182, 171, 171);
+}
+/**
+############################
+###TAMAÑO DE LAS IMAGENES###
+############################
+**/
+body > :nth-child(4) > img,
+body > :nth-child(5) > :first-child > img,
+body > :nth-child(5) > :nth-child(2) > img,
+body > :nth-child(5) > :nth-child(3) > img {
+    margin: 1rem;
     height: 511px;
     width: 360px;
+    margin-top: 1rem;
+}
+/**
+############################
+#######PARRAFOS AZULES#####
+############################
+**/
+body > :nth-child(4) > :nth-child(2),
+body > :nth-child(5) > :first-child > :nth-child(3),
+body > :nth-child(5) > :nth-child(2) > :nth-child(2),
+body > :nth-child(5) > :nth-child(3) > :nth-child(2) {
+    color: #0057ff;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+body > :nth-child(4) > h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+/**
+############################
+#######PARRAFOS GRISES######
+############################
+**/
+body > :nth-child(4) > p,
+body > :nth-child(5) > :first-child > :nth-child(5),
+body > :nth-child(5) > :nth-child(2) > :nth-child(4),
+body > :nth-child(5) > :nth-child(3) > :nth-child(4),
+body > :nth-child(7) > p {
+    color: rgb(99, 95, 95);
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 16px;
 }
 
+body > :nth-child(4) > :nth-child(5) {
+    margin-bottom: 1rem;
+}
+body > :nth-child(4) > p > span {
+    color: black;
+    margin-right: 1.5rem;
+}
+/**
+######################################################################
+#######MARGENER DE LOS BOTONES CON RESPECTO A LAS IMAGENES############
+######################################################################
+**/
+body > :nth-child(4) > button,
+body > :nth-child(5) > :first-child > button,
+body > :nth-child(5) > :nth-child(2) > button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+}
+/**
+############################
+#######Boton buy############
+############################
+**/
+body > section > :nth-child(7),
+body > :nth-child(5) > :first-child > :nth-child(6),
+body > :nth-child(5) > :nth-child(2) > :nth-child(5),
+body > :nth-child(5) > :nth-child(3) > :nth-child(5) {
+    background-color: #0057ff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 520;
+    margin-left: 1rem;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+}
+/**
+############################
+#######Boton highlights#####
+############################
+**/
+body > :nth-child(4) > :nth-child(8),
+body > :nth-child(5) > :first-child > :nth-child(7),
+body > :nth-child(5) > :nth-child(2) > :nth-child(6),
+body > :nth-child(5) > :nth-child(3) > :nth-child(6) {
+    background-color: white;
+    font-size: 16px;
+    border: 2px solid rgb(194, 191, 191);
+    font-weight: bold;
+    margin-left: 1rem;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+}
+/**
+########################################
+#######CUARTA SECCIÓN DE LA PAGINA######
+########################################
+**/
+body > :nth-child(5) {
+    width: 412px;
+    margin-left: 1rem;
+}
+body > :nth-child(5) > nav > h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+/**
+############################
+###PARRAFOS 186, 185, 184###
+############################
+**/
+body > :nth-child(5) > :first-child > :nth-child(4),
+body > :nth-child(5) > :nth-child(2) > :nth-child(3),
+body > :nth-child(5) > :nth-child(3) > :nth-child(3) {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+/**
+##############################################
+###########QUINTA SECCIÓN DE LA PAGINA########
+##############################################
+**/
+body > :nth-child(6) {
+    width: 412px;
+    border-top: 1px solid rgb(194, 191, 191);
+    margin-top: 3rem;
+}
+body > :nth-child(6) > :first-child {
+    background-color: #0057ff;
+    color: white;
+    width: 412px;
+    height: 600px;
+    margin-top: 6rem;
+}
+
+body > :nth-child(6) > :first-child > h2,
+body > :nth-child(6) > :last-child > h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+body > :nth-child(6) > :first-child > p,
+body > :nth-child(6) > :last-child > p {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+body > :nth-child(6) > :first-child > h4,
+body > :nth-child(6) > :last-child > h4 {
+    font-size: 25px;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+body > :nth-child(6) > :first-child > ul,
+body > :nth-child(6) > :last-child > ul {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+body > :nth-child(6) > :first-child > ul > li,
+body > :nth-child(6) > :last-child > ul > li {
+    list-style: none;
+    margin-top: 0.8rem;
+    font-weight: bold;
+}
+body > :nth-child(6) > :first-child > :nth-child(5) {
+    color: #0057ff;
+    background-color: white;
+    font-size: 18px;
+    margin-left: 1rem;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+body > :nth-child(6) > :first-child > :nth-child(6) {
+    color: white;
+    background-color: #0057ff;
+    border: 2px solid white;
+    height: 40px;
+    width: 150px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 17px;
+}
+body > :nth-child(6) > :last-child {
+    background-color: black;
+    color: white;
+    width: 412px;
+    height: 600px;
+}
+body > :nth-child(6) > :last-child > :nth-child(5) {
+    border: none;
+
+    font-size: 18px;
+    height: 40px;
+    width: 200px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+body > :nth-child(6) > :last-child > :nth-child(6) {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    height: 40px;
+    width: 150px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 17px;
+}
+/**
+##############################################
+###########SEXTA SECCIÓN DE LA PAGINA########
+##############################################
+**/
+body > :nth-child(7) {
+    border-top: 1px solid rgb(194, 191, 191);
+    margin-top: 6rem;
+    width: 412px;
+}
+body > :nth-child(7) > h2 {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: 412px;
+}
+body > :nth-child(7) > button {
+    border: 2px solid rgb(194, 191, 191);
+    background-color: white;
+    width: 130px;
+    height: 40px;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2rem;
+}
+/**
+##############################################
+###########FOOTER DE LA PAGINA################
+##############################################
+**/
+body > footer {
+    border-top: 1px solid rgb(194, 191, 191);
+    width: 412px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+body > footer > img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50px;
+    margin-left: 2rem;
+    margin-right: 3.8rem;
+    margin-top: 2rem;
+}
+body > footer > p {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(99, 95, 95);
+    margin-bottom: 2rem;
+}
+@media (max-width: 765px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body > header {
+        width: 768px;
+}
+body > header > ul{
+    width: 768px;
+}
+body > section{
+    width: 768px;
+}
+
+ }
