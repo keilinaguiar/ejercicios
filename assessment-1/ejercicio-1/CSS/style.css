@@ -414,20 +414,19 @@ body > footer > p {
     color: rgb(99, 95, 95);
     margin-bottom: 2rem;
 }
-@media (max-width: 765px){
-    *{
+@media (max-width: 765px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     body > header {
         width: 768px;
+    }
+    body > header > ul {
+        width: 768px;
+    }
+    body > section {
+        width: 768px;
+    }
 }
-body > header > ul{
-    width: 768px;
-}
-body > section{
-    width: 768px;
-}
-
- }
