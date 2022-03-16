@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+body > header{
+    display: flex;
+}
+body > header > ul{
+    display: flex;
+    width: 412px;
+    height: 90px;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+body > header > ul :first-child{
+    display: flex;
+    margin: 1rem;
+    margin-top: 2rem;
+    font-size: 18px;
+}
+body > header > ul :nth-child(2) > img{
+    display: inline-block;
+    justify-content: center;
+    width: 75px;
+    margin-left: 2rem;
+    margin-right: 3.8rem;
+}
+body > header > ul :last-child{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 1rem;
+    width: 35px;
+}
+body > section:first-of-type(){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+body > section:first-of-type >h1{
+    font-size: 50px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 3.2rem;
+}
+body > section:first-of-type > p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(99, 95, 95);
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 3.2em;
+    line-height: 1.8rem;
+}
+body > section:first-of-type > :nth-child(3){
+    background-color: rgb(43, 106, 201);
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 1rem;
+    width:200px;
+    height:45px;
+    border-radius: 5px;
+}
+body > section:first-of-type > :nth-child(4){
+    color: rgb(43, 106, 201);
+    background-color: white; 
+    border-color: rgb(43, 106, 201);
+    font-size: 20px;
+    font-weight:bold;
+    margin-left: 1rem;
+    width:200px;
+    height:45px;
+    border-radius: 5px;
+}
+body > :nth-child(3) > ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid rgb(182, 171, 171);
+    border-top: 1px solid rgb(182, 171, 171);
+    margin-bottom: 2rem;
+    font-size: 15px;
+
+}
+body > :nth-child(3) > ul > li{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+}
+body > :nth-child(4) > img{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    height: 511px;
+    width: 360px;
+}
+
